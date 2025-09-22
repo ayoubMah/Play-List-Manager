@@ -7,7 +7,7 @@ public class PlayList {
         head = new VideoNode(null,null,null);
         tail = new VideoNode(null,head,null);
         head.setNextVideo(tail);
-        tail.setNextVideo(head); // i guss this line allow us to make it circularly
+        tail.setPrevVideo(head); // i guss this line allow us to make it circularly
     }
 
     public int size(){
@@ -20,7 +20,7 @@ public class PlayList {
 
     // first and last : methods to get the first video and the last one in a playList
     public Video first(){
-        if (isEmpty() == true) return null;
+        if (isEmpty()) return null;
         VideoNode node = head.getNextVideo();
         return node.getVideo();
     }
@@ -74,5 +74,18 @@ public class PlayList {
         return result;
     }
 
+    @Override
+    public String toString() {
+        if (isEmpty()) return "PlayList is empty.";
+
+        StringBuilder sb = new StringBuilder("PlayList: [\n");
+        VideoNode current = head.getNextVideo();
+        while (current != tail) {
+            sb.append("  ").append(current.getVideo()).append("\n");
+            current = current.getNextVideo();
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 
 }
