@@ -3,6 +3,8 @@ public class PlayList {
     VideoNode tail;
     int size = 0;
 
+    VideoNode current;
+
     public PlayList(){
         head = new VideoNode(null,null,null);
         tail = new VideoNode(null,head,null);
@@ -72,6 +74,46 @@ public class PlayList {
         if (isEmpty()) return null;
         Video result = remove(tail.getPrevVideo()) ;
         return result;
+    }
+
+    public void play(){
+        if (isEmpty()) System.out.println("The Playlist is empty");
+        current = head.getNextVideo();
+        String title = current.getVideo().getTitle();
+        System.out.println("... "+title+" _ is running ...");
+    }
+
+    public void next(){
+        if (isEmpty()) {
+            System.out.println("The Playlist is empty");
+            return;
+        }
+
+        if (current == null){
+            current = head.getNextVideo(); // start from the beginning
+        } else if (current == tail.getPrevVideo()) {
+            System.out.println("✅ Done! You reached the end of the playlist.");
+            return;
+        }else {
+            current = current.getNextVideo();
+        }
+        String title = current.getVideo().getTitle();
+        System.out.println("▶️ Now playing: " + title);
+    }
+
+    public void prev(){
+        if (isEmpty()) System.out.println("The Playlist is empty");
+
+        if (current == null){
+            current = head.getNextVideo(); // start from the beginning
+        } else if (current == head.getNextVideo()) {
+            System.out.println("⏮\uFE0F You are already at the first video.");
+            return;
+        }else {
+            current = current.getPrevVideo();
+        }
+        String title = current.getVideo().getTitle();
+        System.out.println("▶️ Now playing: " + title);
     }
 
     @Override

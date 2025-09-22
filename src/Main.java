@@ -23,6 +23,9 @@ public class Main {
                     System.out.println("  list      - Show all videos in the playlist");
                     System.out.println("  first     - Show the first video");
                     System.out.println("  last      - Show the last video");
+                    System.out.println("  play      - Play the playlist starting by the first video");
+                    System.out.println("  next      - Play the next video in the playlist");
+                    System.out.println("  play      - Play the prev video in the playlist");
                     System.out.println("  exit      - Quit the program");
                     break;
 
@@ -70,6 +73,18 @@ public class Main {
 
                 case "last":
                     System.out.println(playList.last() != null ? playList.last() : "Playlist is empty.");
+                    break;
+
+                case "play":
+                    playList.play();
+                    break;
+
+                case "next":
+                    playList.next();
+                    break;
+
+                case "prev":
+                    playList.prev();
                     break;
 
                 case "exit":
