@@ -30,3 +30,9 @@ bin/
 
 .idea/
 
+*.class
+
+/out/
+/build/
+/target/
+
