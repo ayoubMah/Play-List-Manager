@@ -37,6 +37,9 @@ Empty Playlist:
 - An empty playlist looks like this: `head <--> tail`.
 
 ---
+## Demo
+
+---
 
 ## 🚀 Features
 
