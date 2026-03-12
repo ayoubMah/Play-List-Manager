@@ -1,4 +1,4 @@
-# 🎵 Playlist CLI
+# Playlist CLI
 
 A **simple Command Line Interface (CLI) playlist manager** built in **Java**. This project simulates a music or video playlist using a custom **doubly linked list** with sentinel nodes.
 
@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/4dd913a2-3239-4018-a97e-2726a74cabdc
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Add Videos**: Add new videos to the **beginning** or **end** of the playlist.
 - **Remove Videos**: Remove videos from the **beginning** or **end**.
@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/4dd913a2-3239-4018-a97e-2726a74cabdc
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 1. **Clone or Download**: Clone the repository or download the source files (`Video.java`, `VideoNode.java`, `PlayList.java`, `MainCLI.java`).
 
@@ -74,12 +74,12 @@ https://github.com/user-attachments/assets/4dd913a2-3239-4018-a97e-2726a74cabdc
 
 ---
 
-## 📖 Example Usage
+## Example Usage
 
 Here is a sample session interacting with the Playlist CLI:
 
 ```text
-🎵 Welcome to the Playlist CLI 🎵
+ Welcome to the Playlist CLI 
 Type 'help' to see available commands.
 
 > addlast
@@ -123,7 +123,7 @@ Enter duration (minutes): 15.0
 
 ---
 
-## ✅ Available Commands
+## Available Commands
 
 | Command | Description |
 |---------|-------------|
@@ -143,7 +143,7 @@ Enter duration (minutes): 15.0
 
 ---
 
-## 📝 To-Do / Future Features
+## To-Do / Future Features
 
 Here are some ideas for future improvements:
 
@@ -175,7 +175,7 @@ Here are some ideas for future improvements:
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 
 This is a practice project and is not intended for production use. Its main goals are to:
 
@@ -186,12 +186,12 @@ This is a practice project and is not intended for production use. Its main goal
 
 ---
 
-## 🤝 Contributions
+##  Contributions
 
 Contributions are welcome! If you have ideas for improvements or new features, feel free to fork this repository, make your changes, and open a pull request.
 
 ---
 
-## 📜 License
+##  License
 
 This project is created for learning purposes and is not bound by any specific license. You are free to use, modify, and share the code as you see fit.
